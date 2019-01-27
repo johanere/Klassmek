@@ -32,21 +32,25 @@ Figure~\ref{fig:gc} shows four different mechanical systems, in {\bf a)} a pendu
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=0.9\textwidth]{Fig1-1.eps}
+\includegraphics[width=0.9\textwidth]{1tegnt.png}
 \end{center}
 \caption{Four mechanical systems.}
 \label{fig:gc}
 \end{figure}
 
-In all cases specify the number of degrees of freedom and choose an appropriate set of generalized coordinates.
+In all cases specify the number of degrees of freedom and choose an appropriate set of generalized coordinates. \newline
+
+\textit{Generalized coordinates are drawn onto the the system representations in figure \ref{fig:gc}.}
+
 
 \begin{itemize}
 \item 1.a)
-\item 1.b)
+$d=2$ degrees of freedom.  Generalized coordinates,  $q_j$: $q_1=X$ - horizontal position of block. $q_2=\theta$ - angle from vertical axis to pendulum. 
+\item 1.b) $d=2$. $q_1=\theta$ - angle from centre of wheel to string fixation point. $q_2=\phi$ - angle between vertical axis and string.
 \item 1.c)
-$3$ d.o.f - position of center of wheel, point of contact with rod (corresponds to rod orientation - $90 \deg$), distance from point of contact to center of mass of rod. $q_1=X$ horizontal position of center of wheel, $q_2=\theta$ - angle between vertical axis and line from center of wheel to point of contact, $q_3=l$ - distance from point of contact to mass center of rod.
+$d=3$. $q_1=X$ - horizontal position of center of wheel, $q_2=\theta$ - angle between vertical axis and line from center of wheel to point of contact, $q_3=l$ - distance from point of contact to mass center of rod.
 \item 1.d)
-5-$x,y$ - kontaktpunkt, vinkel xakse til projeksjon MMsenter ned i xyplanet, vinkel z akse prosjeksjon MMsenter på z-akse, rotasjonsretning
+$d=5$ - $q_1=X$ - x component of point of contact with surface. $q_2=Y$ - y component of point of ontact with sufrace. $q_3=\theta$ - angle between projection of spinning top onto $xy$-plane and x-axis. $q_4=\phi$ - angle between projection of spinning top onto $xz$-plane and z-axis. $q_5=\chi$ - rotation about own mass center.
 \end{itemize}
 
 \end{exercise}
@@ -76,7 +80,7 @@ Explain why the number of degrees of freedom of the system is two and choose a c
 
 Consider first a an Atwood machine with two parts; $m_1$ and $m_2$, moving vertically on a massless pulley, with a rope of fixed length, $l$, connecting the masses. Each mass has one degree of freedom (vertical movement along the y-axis), while the system set up imposes one constraint equation: $y_1+y_2=l$. Thus, a two body Atwood machine has $d=1$ degree of freedom. \par 
 
-A compound Atwood machine of three masses, such as the one in fig.2 in the assignment paper, may be thought of as two separate two body Atwood machines, similar to the one described above. One Atwood machine with two parts; the part with mass $m_1$, and the part composed of the pulley to which $m_2$ and $m_3$ are connected, pulley 2, with mass $m_2+m_3$. The other Atwood machine is composed of the parts with $m_2$ and $m_3$. Each of the two Atwood machines has one degree of freedom, for a total of $d=2$ degrees of freedom. \par 
+A compound Atwood machine of three masses, such as the one in figure \ref{fig:atwood}, may be thought of as two separate two body Atwood machines, similar to the one described above. One Atwood machine with two parts; the part with mass $m_1$, and the part composed of the pulley to which $m_2$ and $m_3$ are connected, pulley 2, with mass $m_2+m_3$. The other Atwood machine is then made up of the parts with $m_2$ and $m_3$. Each of the two Atwood machines has one degree of freedom, which means a total of $d=2$ degrees of freedom. \par 
 $d=2 \implies q=2$ general coordinates: the vertical distances $Y_1$ and $Y_2$, where $Y_1$ is $y$ coordinate of pulley 2, and $Y_2$ is the distance from pulley 2 to the mass $m_2$. So;
 \begin{align*}
 y_1=Y_1-l_1 \\
@@ -86,9 +90,11 @@ y_2=Y_2
 Thus
 \begin{align*}
 T=\frac{1}{2}m_1(\dot{Y_1})^2+\frac{1}{2}m_2(\dot{Y_2})^2+\frac{1}{2}m_3(\dot{Y_2})^2=\frac{1}{2}m_1(\dot{Y_1})^2+\frac{1}{2}(m_2+m_3)(\dot{Y_2})^2 \\
-V=m_1g(Y_1-l_1 )+m_2g(Y_2-l_2)+m_3gY_2
+T=2m(\dot{Y_1})^2+\frac{3}{2}m(\dot{Y_2})^2=\frac{7}{2}m(\dot{Y_1}^2+\dot{Y_2}^2) \\
+V=m_1g(Y_1-l_1 )+m_2g(Y_2-l_2)+m_3gY_2 \\
+V=4mgY_1+3mgY_2-4mgl_1-2mgl_2 
 \end{align*}
-Such that $L=T-V=\frac{1}{2}m_1(\dot{Y_1})^2+\frac{1}{2}m_2(\dot{Y_2})^2+\frac{1}{2}m_3(\dot{Y_2})^2=\frac{1}{2}m_1(\dot{Y_1})^2+\frac{1}{2}(m_2+m_3)(\dot{Y_2})^2-m_1g(Y_1-l_1 )-m_2g(Y_2-l_2)-m_3gY_2$ 
+Such that $L=T-V= \frac{7}{2}m(\dot{Y_1}^2+\dot{Y_2}^2) -4mgY_1-3mgY_2+4mgl_1+2mgl_2 $
 
 
 \end{exercise}
@@ -99,6 +105,10 @@ Such that $L=T-V=\frac{1}{2}m_1(\dot{Y_1})^2+\frac{1}{2}m_2(\dot{Y_2})^2+\frac{1
 %%%%%%%%
 \begin{exercise}
 Three identicals rods of mass $m$ and length $l$ are connected by frictionless joints and suspended,  with the distance between the points of suspension being equal to the length of the rods, as shown in Fig.~\ref{fig:rods}. The rods move in the plane. Explain why the system has only one degree of freedom, and choose the angle $\theta$ as generalized coordinate.
+\begin{itemize}
+\item The movement of the system is restricted to one plane, so each system part may have up to two d.o.f. If each rod is considered to be made up of two end points, the system consists of 6 parts. Two of those parts are fixed to a surface, so that their contribution to the number of d.o.f is zero. Of the remaining 4 parts, 2 parts belong the horizontal rod, and one to each of the two vertical rods. Each of the end points of the horizontal rod is connected to one of the vertical rods, thus effectively reducing the number of parts to two, which means 4 d.o.f. Lastly, these two parts have 3 restrictions: fixed distance to each other, as well as fixed distance to the hinges fastened to the surface. Thus, the total number of d.o.f is 1.
+\end{itemize}
+
 
 %%%%%%%%%% 
 \begin{figure}[h!]
@@ -115,6 +125,14 @@ Show that the Lagrangian, defined as the difference between the kinetic and pote
 L(\theta,\dot\theta)={5\over 6}m l^2\dot\theta^2+2mgl\cos\theta.
 \end{equation}
 We remind you that the expression for the moment of of inertia of a rod about its endpoint is $I={1\over 3}m l^2$.
+\begin{itemize}
+\item Calculating $K= 2 K_{\text{vertical rod}} + K_{\text{horizontal rod}}$: \\
+In order to find $K_{\text{vertical rod}}$, the total kinetic energy of one of the vertical rods is expressed through rotational energy about it's end point: $\frac{1}{2}I\omega^2=\frac{1}{6}ml^2 \dot{\theta}^2$. As the horizontal rod is not rotating about any of it's end points,$ K_{\text{horizontal rod}}$ is purely translational, so: $K_{\text{horizontal rod}}=\frac{1}{2}mv^2=\frac{1}{2}m(l \dot{\theta})^2=\frac{1}{2}ml^2\dot{\theta}^2$. Thus $K= 2 K_{\text{vertical rod}} + K_{\text{horizontal rod}}=2 \frac{1}{6}ml^2 \dot{\theta}^ +\frac{1}{2}ml^2\dot{\theta}^2=\frac{5}{6} ml^2\dot{\theta}^2$
+\item $V= 2 V_{\text{vertical rod}} + V_{\text{horizontal rod}}$:\\
+Considering that the system's constraints, $V(\theta=0)=0$, and $V(\theta)=V_{max}$, which means that the heigh, $h$, is displacement in the direction of $\vec{g}$:  $\theta=0$ $V_{\text{vertical rod}}=mgh_{\text{center of mass}}=mgh_{\text{center of mass}}=mg (-\frac{l}{2}) cos \theta$ \\
+$V_{\text{horizontal rod}}=-mgl cos\theta$, which means that $V= 2 V_{\text{vertical rod}} + V_{\text{horizontal rod}}=-2mgl cos \theta$
+\item $L=K-V=\frac{5}{6} ml^2\dot{\theta}^2-(-2mgl cos \theta)=\frac{5}{6} ml^2\dot{\theta}^2+2mgl cos \theta$
+\end{itemize}
 \end{exercise}
 %%%%%%%%
 
@@ -153,8 +171,16 @@ As the particle moves in three-dimensional space, under one constraint, the numb
 \begin{align*}
 \mathbf{f}\cdot \mathbf{r}=0 \\
 f_x \delta x  +f_y \delta y  -f_z( 2xe^{x^2+y^2} \delta x + 2ye^{x^2+y^2} \delta y) = 0 \\
+(f_x-f_z2xe^{x^2+y^2}) \delta x + (f_y-f_z2ye^{x^2+y^2} )\delta y=0
 \end{align*}
- 
+Which must hold for any value of $\delta x$ and $\delta y$, thus
+\begin{align*}
+f_x-f_z2xe^{x^2+y^2}=0 \\
+f_y-f_z2ye^{x^2+y^2}=0 \\
+\vec{f}(x,y)=(2xe^{x^2+y^2},2ye^{x^2+y^2},1)f_z
+\end{align*}
+I am not sure how to proceed from here. Any comments on this would be greatly appreciated. 
+
 \item[\bf d)]Make a drawing of a section through the surface for $y=0$. Indicate in the drawing the direction of the two vectors $\vec f$ and $\delta \vec r$ for a chosen point on the surface.
 \end{itemize}
 \end{exercise}
