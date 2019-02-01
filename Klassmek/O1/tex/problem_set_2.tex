@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+
+\usepackage{graphicx}% Include figure files
+%\usepackage{epstopdf}
+%\usepackage{pdfsync}
+\usepackage{amstext,amsbsy}
+\usepackage{times} 
+\usepackage{amsmath}
+%% Numbered problems
+\newcounter{excount}[chapter]
+\newenvironment{exercise}[1][]{\addtocounter{excount}{1} \noindent {\bf Problem
+    \arabic{excount} \ \ #1}\hspace{2mm}}{\vspace{4mm}}
+
+
+\title{FYS3120 Classical Mechanics and Electrodynamics\\ 
+\vspace{15mm}Problem set 2}
+
+
+%%%%%%%
+\begin{document}
+%%%%%%%
+\maketitle
+
+\section*{Problem 1}
+\subsection*{1.a)}
+$\frac{\partial L}{\partial t}$ is the expression for the explicit time dependence of the Lagrangian with respect to time - where all other variables than time is fixed. $\frac{dL}{dt}$ is, in contrast, the total (explicit and implicit) dependence of the Lagrangian on time, which includes the dependence of all variables in the Lagrangian with respect to time - for example how a spatial coordinate (in the Lagrangian) varies with respect to time.
+\subsection*{1.b)}
+ 
+\section*{Problem 2}
+\subsection*{2.a)}
+$q=\{q_i\}_{i=1}^{i=2}, q_1=\theta,q_2=\phi$, where $\theta$ is the angle between the uppermost rod (rod 1) and the vertical plane, and $\phi$ is the angle between the other rod (rod 2) and the horizontal plane. \par
+
+Taking the moment of inertia of rod 1 about it's fixed end, $I_1=ml^2/3$, the speed of the center of mass of rod 2, $v_2$, and the moment of inertia about the center of mass of rod 2, $I_{2,CM}$:
+$K=\frac{1}{2}I_1\dot{\theta}^2+\frac{1}{2}m v_2^2+\frac{1}{2}I_{2,CM}\dot{\phi}^2=\frac{1}{6}ml^2\dot{\theta}^2+\frac{3}{6}m l^2\dot{\theta}^2+\frac{1}{24}ml^2\dot{\phi}^2=\frac{2}{3}ml^2\dot{\theta}^2+\frac{1}{24}ml^2\dot{\phi}^2$. \par 
+Taking the distance from the fixed surface to the center of mass of each rod, $y=-l \cos \theta$: $V=mgy_1+mgy_2=-mg\frac{l}{2} cos \theta-mglcos \theta=-\frac{3}{2}mgl cos \theta$. Thus: $L=K-V=
+\frac{2}{3}ml^2\dot{\theta}^2+\frac{1}{24}ml^2\dot{\phi}^2+\frac{3}{2}mg lcos \theta$
+\subsection*{2.b)}
+Lagrange's equations for the system:
+\begin{align*}
+\frac{dL}{dt}(\frac{\partial L }{\partial \dot{q}_i})-\frac{\partial L}{\partial q_i}=0 \implies \\
+\frac{dL}{dt}(\frac{\partial L }{\partial \dot{\theta}})-\frac{\partial L}{\partial \theta}=\frac{4}{3}ml^2\ddot{\theta}+\frac{3}{2}mgl sin \theta=0\\
+\frac{dL}{dt}(\frac{\partial L }{\partial \dot{\phi}})-\frac{\partial L}{\partial \phi}=\frac{1}{12}ml^2\ddot{\phi}=0
+\end{align*}
+For small oscillations about equilibrium position ($\theta=0$), $\sin \theta\approx\theta$, so:
+\begin{align*}
+\frac{4}{3}ml^2\ddot{\theta}+\frac{3}{2}mgl sin \theta\approx\frac{4}{3}ml^2\ddot{\theta}+\frac{3}{2}mgl \theta = 0 \implies \\
+\ddot{\theta}(\theta)=-\frac{9}{8}\frac{g}{l} \theta  \implies \dot{\theta}=-\frac{9}{8}\frac{g}{l} \theta t+c, c=\theta_0=0 \rightarrow \dot{\theta}=-\frac{9}{8}\frac{g}{l} \theta t
+\end{align*}
+
+\section*{Problem 3}
+\subsection*{3.a)}
+
+%%%%%%
+\end{document}
+%%%%%%%%
