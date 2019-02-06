@@ -49,7 +49,8 @@ An object with mass $m$ slides without friction on a plane inclined 30$^\circ$. 
 
 \item[\bf b)]  Assume next the acceleration $a$ to be constant and non-vanishing. Again find the Cartesian coordinates, and their time derivatives, expressed in terms of $s$ and $\dot s$, and determine the Lagrangian.
 
-\item $x=at^2+s\sqrt{3}/2, \dot{x}=2at+\dot{s}\sqrt{3}/2$
+\item $x=\frac{1}{2} at^2+s\sqrt{3}/2, \dot{x}=at+\dot{s}\sqrt{3}/2$
+\item gjør på nytt herfra. huk krysledd i $\dot{x}$
 \item $y=h-s/2,\dot{y}=-\dot{s}/2$
 \item $K=\frac{1}{2}mv=\frac{1}{2}m( \dot{x}^2+y^2)=\frac{1}{2}m(4a^2 t^2+\dot{s}^2), V=-mgh+mgs/2$, so $L=K-V=\frac{1}{2}m(4a^2 t^2+\dot{s}^2)-mgh+mgs/2$
 
@@ -75,7 +76,17 @@ A rigid circular metal hoop rotates with constant angular velocity $\omega$ arou
 
 \begin{itemize}
 \item[\bf a)] Find the Lagrangian expressed in terms of $\theta$ and $\dot\theta$, and derive Lagrange's equation for this variable.
+
+\item $K=\frac{1}{2}m(r^2\omega^2 sin^2\theta+\dot{\theta}^2)$
+\item $V=0$
+\item $L=\frac{1}{2}m(r^2\omega^2 sin^2\theta+\dot{\theta}^2)$
+\item $\frac{d}{dt}\frac{\partial L}{\partial \dot{\theta}}-\frac{\partial L}{\partial \theta}=
+m\ddot{\theta}-m r^2\omega^2 sin(\theta)cos(\theta)=m\ddot{\theta}-\frac{1}{2} m r^2\omega^2 sin(2\theta)$
+
 \item[\bf b)] Show that the Lagrangian is the same as the Lagrangian of a particle moving in a time-independent, periodic potential $V(\theta)$, with two stable and two unstable equilibrium points (within a $2\pi$ interval).
+
+\item If a particle of mass $m$ and velocity $\dot{\theta}$, moves in a periodic potential $V(\theta)$ with two stable and two unstable equilibrium points on a $2\pi$ interval, it's kinetic energy may be written as $K=\frac{1}{2}m\dot{\theta}$, while it's potential energy may be written as $V=Asin^2(\theta)$. The Lagrangian is then $L=K-V=\frac{1}{2}m\dot{\theta}-Asin^2(\theta)$  , where $A$ is a constant. If $A=\frac{1}{2} m r^2\omega^2 $, this formulation of the Lagrangian is the same as in the original problem.
+
 \item[\bf c)] With $\theta_0$ as one of the stable equilibrium points, introduce a small deviation, $\phi=\theta-\theta_0$, and determine the small-angle form of the equation of motion (keeping only the lowest order in $\theta$ and its derivative). What is the angular frequency of oscillations about the stationary point?
 \end{itemize}
 \end{exercise}
