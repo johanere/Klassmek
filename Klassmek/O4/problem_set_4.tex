@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+
+\usepackage{graphicx} % Include figure files
+\usepackage{amstext,amsbsy,amssymb}
+%\usepackage{times} 
+
+%% Numbered problems
+\newcounter{excount}[chapter]
+\newenvironment{exercise}[1][]{\addtocounter{excount}{1} \noindent {\bf Problem
+    \arabic{excount} \ \ #1}\hspace{2mm}}{\vspace{4mm}}
+
+
+\title{FYS3120 Classical Mechanics and Electrodynamics\\ 
+\vspace{15mm}Problem set 4}
+
+
+%%%%%%%
+\begin{document}
+%%%%%%%
+\maketitle
+
+
+%%%%%%%%
+\begin{exercise}
+\begin{itemize}
+\item[a)]
+\item $K=\frac{1}{2}I\dot{\theta}^2=\frac{b}{2}\frac{1}{3}mb^2\dot{\theta}^2$, $V=-mb\frac{b}{2}cos \theta$
+\item $L=K-V=\frac{1}{2}\frac{1}{3}mb^2\dot{\theta}^2+mb\frac{l}{2}cos \theta$
+\item $\frac{dL}{dt}(\frac{\partial L}{\partial \dot{\theta}})-\frac{\partial L}{\partial \theta}=\frac{1}{3}mb^2\ddot{\theta}+mg\frac{b}{2}sin \theta=\ddot{\theta}+\frac{3g}{2b}sin\theta=0$
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+\begin{itemize}
+\item[a)]
+\item $K=\frac{1}{2}m_1 \dot{\vec{r}}_1^2+\frac{1}{2}m_2 \dot{\vec{r}}_2^2, V=|\vec{r}_1-\vec{r}_2| c$, where $c$ is a constant.
+\item $L=K-V=\frac{1}{2}m_1 \dot{\vec{r}}_1^2+\frac{1}{2}m_2 \dot{\vec{r}}_2^2 -V(\vec{r}_1,\vec{r}_2)$
+\item[b)]
+$\vec{r}=\vec{r}_1-\vec{r}_2,$
+
+
+\end{itemize}
+\end{exercise}
+
+\end{document}
+
