@@ -36,7 +36,7 @@ E_{\mu\nu\rho}=T_{\mu\nu}\,S^{\nu}_{\;\;\rho}\,,\quad G=S_{\mu\nu}\,T^{\nu}_{\;\
 \begin{itemize}
 \item[1.]$\mu$ should be summed over, as it appears twice on RHS. Indices must appear once as subscript and once as superscript. 
 \item[2.]
-? Order of sub and super script? $T^{\mu}_{\;\;\nu}$ vs $T_{\nu}^{\;\;\mu} $
+Nothing wrong about this (?)
 \item[3.]
 $\nu$ is summed over on the LHS, so it should be contracted.
 
@@ -69,7 +69,19 @@ where the differential operator $\partial_{\mu}$ is defined by
 \partial_{\mu}\equiv \frac{\partial}{\partial x^\mu}.
 \end{equation}
 {\it Hint:} If you are uncertain about results for tensors, a convenient way to check these is always to specify the index values explicitly, {\it e.g.}, in the first case, by choosing $\mu=1$, which gives $\partial_{\mu}=\frac{\partial}{\partial x}$, and writing $f(x)=(ct)^2-(x^2+y^2+z^2)$.
+<<<<<<< HEAD
 \item $f(x)=x_{\nu} x^{\nu}=g_{\mu\nu} x^{\mu}x^{\nu} \rightarrow \partial_{\mu}f(x)=\partial_{\mu}  g_{\rho \nu} x^{\rho} x^{\nu}=\frac{\partial g_{\rho \nu} x^{\rho} x^{\nu} }{\partial x^{\mu}}=\partial g_{\rho \nu} x^{\rho} \delta_{\mu}^{\nu}+\partial g_{\rho \nu} \delta_{\mu}^{\rho} x^{\nu}=x_{\nu} \delta^{\nu}_{\mu}+x_{\rho}\delta^{\rho}_{\mu}=2x_{\mu}$
+=======
+\item $f(x)=x_{\nu}x^{\nu} = g_{\rho 
+\nu} x^{\rho}x^{\nu}  \rightarrow \partial_{\mu} f(x) = \frac{\partial g_{\rho 
+\nu} x^{\rho}x^{\nu}}{\partial^{\mu}} = g_{\rho 
+\nu} x^{\rho} \frac{ \partial x^{\nu}}{\partial x^{\mu}} + g_{\rho \nu} x^{\nu} \frac{\partial x^{\rho}}{\partial x{^\mu}}    = g_{\rho 
+\nu} x^{\rho} \delta^{\nu}_{\mu} + g_{\rho \nu} x^{\nu} \delta_{\mu}^{\rho}=  g_{\rho 
+\nu} ( x^{\rho} \delta^{\nu}_{\mu} + x^{\nu} \delta_{\mu}^{\rho} )=g_{\rho 
+\mu} x^{\rho}+g_{\nu \mu} x^{\nu}=2x_{\mu}$
+\item $\partial_{\mu}g^{\mu}(x)=\frac{\partial x^{\mu}}{\partial x^{\mu}}=4$ 
+\item $ \partial_{\mu} b^{\mu\nu}(x)=\frac{\partial}{\partial x^{\mu}}  x^{\mu}x^{\nu}= x^{\nu}\frac{\partial x^{\mu}}{\partial x^{\mu}}+ x^{\mu}\frac{\partial x^{\nu}}{\partial x^{\mu}}=4x^{\nu}+x^{\mu} \delta_{\mu}^{\nu}=4x^{\nu}+x^{\nu}=5x^{\nu}$ 
+>>>>>>> 1db211cfa5499742a332a69cfafa8b0356b6acfd
 \end{itemize}
 
 
@@ -95,6 +107,7 @@ E = \gamma m_e c^2= \sqrt{p^2c^2+m_e^2c^4}.
 \gamma=\sqrt{1+\kappa^2 t^2},
 \end{equation}
 and determine $\kappa$. 
+<<<<<<< HEAD
 
 
 \item (6) and electron moving along field lines $\rightarrow p=\int eE dt = eEt$. (7) $\rightarrow \gamma = \sqrt{1+\frac{p^2}{m_e^2 c^2}}=\sqrt{1+\frac{e^2E^2 t ^2}{m_e^2 c^2}}=\sqrt{1+\kappa^2t^2} \rightarrow \kappa = \frac{eE}{m_e c}$ 
@@ -105,13 +118,29 @@ and determine $\kappa$.
 \item $\gamma=cosh \kappa \tau=\sqrt{1+\kappa^2 t^2} \rightarrow t=\frac{\sqrt{cosh^2 \kappa \tau -1}}{\kappa}=\frac{sinh \kappa \tau}{\kappa}$, $\frac{dt}{d\tau}=cosh \kappa \tau=\gamma$
 
 
+=======
+\item Electron move along field lines $\rightarrow \frac{d}{dt} \vec{p}=\frac{d}{dt} \vec{p}=eE \rightarrow p=eEt$, $\gamma = \frac{\sqrt{p^2c^2+m_e^2c^4}}{m_ec^2}=\sqrt{\frac{e^2E^2t^2 }{m_e^2 c^2}+1} = \sqrt{1+\kappa^2 t^2} \rightarrow \kappa=\frac{eE}{m_ec}$
+ 
+\item[\bf b)] The proper time $\tau$ is related to the coordinate time $t$ by the formula $\frac{dt}{d\tau}=\gamma$. Show that if we write $\gamma=\cosh{\kappa \tau}$ then $\tau$ satisfies this above condition. 
+
+\item $\cosh{\kappa \tau} =  \sqrt{1+\kappa^2 t^2}  \rightarrow  \cosh^2{\kappa \tau} = 1+\kappa^2 t^2 \rightarrow t=\frac{\sqrt{cosh^2 \kappa \tau-1}}{\kappa}=\frac{\sinh \kappa \tau}{\kappa}$ such that $\frac{dt}{d\tau}=\cosh \kappa \tau = \gamma$
+>>>>>>> 1db211cfa5499742a332a69cfafa8b0356b6acfd
 \item[\bf c)] For linear motion we have the following relation between the proper acceleration $a_0$ and the acceleration $a$ measured in a fixed inertial reference frame, $a_0=\gamma^3 a$. Use this to show that the electron has a constant proper acceleration, given by $\vec a_0= e\vec E/m_e$.
 {\it Hint:} You will need to find the time-derivative of $\gamma$. (A look in the lecture notes might be helpful.) 
+
+$a_0=\gamma^3a$
+
+$p^{\mu}=m_eU^{\mu}=(E/c,\vec{p})=(\gamma m_ec,\vec{p}) \rightarrow U^{\mu}=(\gamma c,\vec{p}/m_e)$, $A^{\mu}=\frac{dU^{\mu}}{d\tau}=\frac{d\tau}{dt}\frac{dU^{\mu}}{dt}=\gamma (\frac{d}{dt}\gamma c, \frac{d}{dt} \vec{p}/m_e)=\gamma (\frac{d}{dt}\gamma c, e\vec{E}/m_e)$, $\frac{d\gamma}{dt}=\frac{d}{dt}\sqrt{1+\kappa^2 t^2}=\frac{\kappa^2 t}{\sqrt{1+\kappa^2 t^2}}=\frac{\kappa^2 t}{\gamma} \rightarrow A^{\mu}=(c \kappa^2 t, \gamma e\vec{E}/m_e)$, which gives $A=(0,\vec{a}_0)=(0,e\vec{E}/m_e)$ since $\gamma=1$ in that RF.  I did not however make use the given relationship between $a$ and $a_0$, and I am still not sure how I would go about using it. I have made numerous attempts, for example by starting at  $\vec{p}=m_e\gamma \vec{v}$, then taking derivatives, but nothing I've tried has seemed right.
+
 \item[\bf d)] Find explicit expressions for the four-velocity $U^{\mu}$ and the four-acceleration $A^{\mu}$ as functions of the proper time $\tau$ and show from these that we get the expected $A^{\mu}A_{\mu}=-a_0^2$. (For simplicity you may assume the motion to be in the $x$-direction.) As a reminder we also give the following functional relations:
 \begin{equation}
 \cosh^2x-\sinh^2x=1\,,\quad
 \frac{d}{dx}\cosh x=\sinh x\,,\quad\frac{d}{dx}\sinh x=\cosh x.
 \end{equation}
+
+\item 
+$U^{\mu}=(\gamma c,\vec{p}/m_e)=\cosh \kappa \tau(c , \vec{v} )$
+\item $A^{\mu}=(c \kappa^2 t, \gamma e\vec{E}/m_e)=(c \kappa^2 t, e\vec{E}/m_e\cosh \kappa \tau )\rightarrow A^2=(A_0)^2-(\vec{A})^2=(c \kappa^2 t)^2 - (e\vec{E}/m_e\cosh \kappa \tau)^2=(c \kappa^2 t)^2 - a_0^2 \cosh \kappa \tau^2$. I have not managed to get any further with this. I suspect that I should have $\gamma$ expressed in some form or another in $A_0$, and be able to get a $\sinh \kappa \tau$ from there, then using $\cosh^2 x - \sinh^2 x =1$ or something similar to show that $A^{\mu}A_{\mu}=-a_0^2$. 
 \end{itemize}
 \end{exercise}
 
