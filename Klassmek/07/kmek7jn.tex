@@ -69,7 +69,12 @@ where the differential operator $\partial_{\mu}$ is defined by
 \partial_{\mu}\equiv \frac{\partial}{\partial x^\mu}.
 \end{equation}
 {\it Hint:} If you are uncertain about results for tensors, a convenient way to check these is always to specify the index values explicitly, {\it e.g.}, in the first case, by choosing $\mu=1$, which gives $\partial_{\mu}=\frac{\partial}{\partial x}$, and writing $f(x)=(ct)^2-(x^2+y^2+z^2)$.
+\item $f(x)=x_{\nu} x^{\nu}=g_{\mu\nu} x^{\mu}x^{\nu} \rightarrow \partial_{\mu}f(x)=\partial_{\mu}  g_{\rho \nu} x^{\rho} x^{\nu}=\frac{\partial g_{\rho \nu} x^{\rho} x^{\nu} }{\partial x^{\mu}}=\partial g_{\rho \nu} x^{\rho} \delta_{\mu}^{\nu}+\partial g_{\rho \nu} \delta_{\mu}^{\rho} x^{\nu}=x_{\nu} \delta^{\nu}_{\mu}+x_{\rho}\delta^{\rho}_{\mu}=2x_{\mu}$
 \end{itemize}
+
+
+
+
 \end{exercise}
 
 
@@ -91,8 +96,15 @@ E = \gamma m_e c^2= \sqrt{p^2c^2+m_e^2c^4}.
 \end{equation}
 and determine $\kappa$. 
 
+
+\item (6) and electron moving along field lines $\rightarrow p=\int eE dt = eEt$. (7) $\rightarrow \gamma = \sqrt{1+\frac{p^2}{m_e^2 c^2}}=\sqrt{1+\frac{e^2E^2 t ^2}{m_e^2 c^2}}=\sqrt{1+\kappa^2t^2} \rightarrow \kappa = \frac{eE}{m_e c}$ 
+
  
 \item[\bf b)] The proper time $\tau$ is related to the coordinate time $t$ by the formula $\frac{dt}{d\tau}=\gamma$. Show that if we write $\gamma=\cosh{\kappa \tau}$ then $\tau$ satisfies this above condition. 
+
+\item $\gamma=cosh \kappa \tau=\sqrt{1+\kappa^2 t^2} \rightarrow t=\frac{\sqrt{cosh^2 \kappa \tau -1}}{\kappa}=\frac{sinh \kappa \tau}{\kappa}$, $\frac{dt}{d\tau}=cosh \kappa \tau=\gamma$
+
+
 \item[\bf c)] For linear motion we have the following relation between the proper acceleration $a_0$ and the acceleration $a$ measured in a fixed inertial reference frame, $a_0=\gamma^3 a$. Use this to show that the electron has a constant proper acceleration, given by $\vec a_0= e\vec E/m_e$.
 {\it Hint:} You will need to find the time-derivative of $\gamma$. (A look in the lecture notes might be helpful.) 
 \item[\bf d)] Find explicit expressions for the four-velocity $U^{\mu}$ and the four-acceleration $A^{\mu}$ as functions of the proper time $\tau$ and show from these that we get the expected $A^{\mu}A_{\mu}=-a_0^2$. (For simplicity you may assume the motion to be in the $x$-direction.) As a reminder we also give the following functional relations:
