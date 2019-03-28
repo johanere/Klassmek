@@ -7,7 +7,7 @@
 \usepackage{amsmath} % For \mathbb
 \usepackage{amsfonts}
 \usepackage{hyperref}
-
+\usepackage{comment}
 %\pagestyle{empty}
 
 
@@ -111,18 +111,34 @@ and
 \end{equation}
 [3 points]
 
-\item As $\vec{R}$ has constant velocity (1.b), it may be chosen freely. Therefore, $\vec{R}$ is chosen to be $(0,0,0)$. Thus $L=\mu \vec{r}-V(r)$. As the motion is confined to a plane, polar coordinates may be used to be used to describe the system, with general coordinates: $r, \phi$.
 
-\item $L=\frac{1}{2}\mu \vec{r}^2-V(r)=\frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)-V(r)$
+%%%%%%%%%%%%%%%%%%%%%% 1.e
+\item As $\vec{R}$ has constant velocity (1.b), it may be chosen freely. Therefore, $\vec{R}$ is chosen to be $(0,0,0)$. Thus $L=\mu \vec{r}-V(r)$. As the motion is confined to a plane, polar coordinates may be used to be used to describe the system, with general coordinates: $r, \phi$.  \par
+
+The lag
+\textbf{HER ER DET EN FEIl R i tredje}
+\begin{align}
+L=\frac{1}{2}\mu \vec{r}^2-V(r) \\
+L=\frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)-V(r) \label{eq:1.e.L}
+\end{align} 
 \item $p_{\phi}=\frac{\partial L}{\partial \dot{\phi}}=\mu r^2 \dot{\phi}$, and $p_{\phi}=\ell$, so $\dot{\phi}=\frac{\ell}{\mu r^2}$
-\item $\frac{d}{dt}\frac{\partial L}{\partial \dot{r}}-\frac{\partial L}{\partial r}=\frac{d}{dt}(\mu\dot{r})-(\mu r \dot{\phi}^2-\frac{\partial V}{\partial r})=\mu\ddot{r}-\mu r \dot{\phi}^2+\frac{\partial V}{\partial r}=\mu\ddot{r}-\mu r \frac{\ell^2}{\mu^2 r^2}+\frac{\partial V}{\partial r}=\mu\ddot{r}-\frac{\ell^2}{\mu r}+\frac{\partial V}{\partial r}$. 
+\item \begin{align}
+&\frac{d}{dt}\frac{\partial L}{\partial \dot{r}}-\frac{\partial L}{\partial r}=0 \\
+&=\frac{d}{dt}(\mu\dot{r})-(\mu r \dot{\phi}^2-\frac{\partial V}{\partial r})=\mu\ddot{r}-\mu r \dot{\phi}^2+\frac{\partial V}{\partial r}\\
+&=\mu\ddot{r}-\mu r \frac{\ell^2}{\mu^2 r^4}+\frac{\partial V}{\partial r}=\mu\ddot{r}-\frac{\ell^2}{\mu r^3}+\frac{\partial V}{\partial r}=0
+\end{align} 
 
 
 
 \item[{\bf f)}] Find the corresponding Hamiltonian in terms of the generalized coordinates $(r,\phi)$ and generalized momenta $(p_r,p_\phi)$, and write down Hamilton's equations for this system.  [3 points]
 
 \item $p_r=\frac{\partial L}{\partial \dot{r}}=\frac{\partial}{\partial t}\frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)-V(r) = \mu \dot{r} $
-\item $H=\sum_i p_i \dot{q_i}-L= p_{\phi} \dot{\phi} + p_r\dot{r}-(\frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)+V(r))=\sum_i p_i \dot{q_i}-L= p_{\phi} \dot{\phi} + p_r\dot{r}-\frac{1}{2}\frac{p_r \dot{r}}{\mu}-\frac{1}{2}\frac{p_\phi }{\mu}  +V(r))$
+\item \begin{align}
+H=\sum_i p_i \dot{q_i}-L= p_{\phi} \dot{\phi} + p_r\dot{r}-(\frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)-V(r))\\
+= p_{\phi} \dot{\phi} + p_r\dot{r}-\frac{1}{2} p_r \dot{r} -\frac{1}{2}p_\phi \dot{\phi}   +V(r) \\
+= \frac{1}{2} p_r \dot{r} +\frac{1}{2}p_\phi \dot{\phi}   +V(r)\\
+=  \frac{1}{2} \frac{p_r^2}{\mu}  +\frac{1}{2}\frac{p_\phi^2}{\mu r^2}    +V(r) \label{eq:H1}
+\end{align}
 
 
 \item[{\bf g)}] Explain why the Hamiltonian $H$ of this system is a constant of motion and what the physical interpretation of $H$ is. [1 point]
@@ -138,6 +154,71 @@ Consider the gravitational potential between two objects of mass $m_1$ and $m_2$
 V(r)=-\frac{Gm_1m_2}{r},\label{eq:grav_pot}
 \end{equation}
 where $G$ is Newton's gravitational constant.
+\begin{itemize}
+\item[{\bf a)}] Find Hamilton's equations for this system. [1 point]
+\item A gravitational potential is a central potential, as such, $H$ from question 1 may used \eqref{eq:H1}, and the correct $V(r)$ applied:
+\begin{align}
+H &=  \frac{1}{2} \frac{p_r^2}{\mu}  +\frac{1}{2}\frac{p_\phi^2}{\mu r^2}  -\frac{Gm_1m_2}{r}
+\end{align}
+Where $\mu=$ and $p_r$ and $p_\phi$
+ \item[{\bf b)}] Make a two-dimensional plot of the phase space for the distance $r$ between the objects, and its generalized momentum $p_r$, for concreteness fixing the masses to be those of the International Space Station (ISS) orbiting the Earth, varying $\ell$.
+
+Give a qualitative description of the different types of motion that can be read out of the diagram and comment on how the situation changes with increasing $\ell$. {\it Hint:} For those using {\tt python} the plotting framework {\tt pyplot} has a useful plotting command for phase space plots called {\tt streamplot}.  [4 points]
+\item[{\bf c)}] Use the Lagrange equations to show that the differential equation for the orbit equation $r(\phi)$, where $\phi$ is the polar angle of the motion, is
+\begin{equation}
+\frac{d^2r}{d\phi^2}-\frac{2}{ r}\left(\frac{dr}{d\phi}\right)^2-r+\frac{Gm_1m_2\mu }{\ell^2}r^2=0. \label{eq:2c.diffeq}
+\end{equation}
+[2 points]
+
+%%%%%%%%%%%%%%% 2.c
+equation \eqref{eq:1.e.L}
+\item \begin{align}
+&\frac{d}{dt}\frac{\partial L}{\partial \dot{\phi}}-\frac{\partial L}{\partial \phi}=0 \\
+&\frac{d}{dt} \left( \frac{\partial }{\partial \dot{\phi}} \left( \frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)+\frac{Gm_1m_2}{r} \right) \right) -\frac{\partial }{\partial \phi} \left( \frac{1}{2}\mu (\dot{r}^2+r^2\dot{\phi}^2)+\frac{Gm_1m_2}{r} \right)=0\\
+&\frac{d}{dt} \left( \mu r^2\dot{\phi} \right)=0
+\end{align} 
+fra oppgave 1:
+ta me dphidt er lik l lblabl
+\begin{equation}
+\frac{d \dot{\phi}}{dt}= \frac{d}{dt} \frac{\ell}{\mu r^2}=-2\frac{\ell}{\mu r^3}\frac{dr}{dt}=-2\frac{\ell}{\mu r^3}\frac{dr}{d\phi}\frac{d\phi}{dt}=-2 \frac{\dot{\phi}^2}{r} \frac{dr}{d\phi}
+\end{equation}
+
+\begin{align}
+&\mu\ddot r-\frac{\ell^2}{\mu r^3}+\frac{\partial V}{\partial r}=0\\
+&\mu \frac{d}{dt}\frac{d}{dt} r-\frac{\ell^2}{\mu r^3}-\frac{\partial }{\partial r}\frac{Gm_1m_2}{r} =0\\
+&\mu \frac{d}{dt}\left(\frac{dr}{d\phi}\frac{d \phi}{dt}\right) -\frac{\ell^2}{\mu r}+\frac{Gm_1m_2}{r^2} =0\\
+&\mu \frac{d}{dt}\left(\frac{dr}{d\phi}\dot{\phi} \right) -\frac{\ell^2}{\mu r^3}+\frac{Gm_1m_2}{r^2} =0\\
+&\mu \dot{\phi}\frac{d}{dt}(\frac{dr}{d\phi}) + \mu \frac{dr}{d\phi} \frac{d \dot{\phi}}{dt} -\frac{\ell^2}{\mu r^3}+\frac{Gm_1m_2}{r^2} =0\\
+&\mu \dot{\phi}\frac{d\phi}{dt} \frac{d}{d\phi}(\frac{dr}{d\phi}) -2 \mu \frac{\dot{\phi}^2}{r} \left(\frac{dr}{d\phi}\right)^2  \  -\frac{\ell^2}{\mu r^3}+\frac{Gm_1m_2}{r^2} =0\\
+&\mu \dot{\phi}^2 \frac{d^2r}{d\phi^2} -2 \mu \frac{\dot{\phi}^2}{r} \left(\frac{dr}{d\phi}\right)^2  \  -\frac{\ell^2}{\mu r^3}+\frac{Gm_1m_2}{r^2} =0\\
+&\frac{d^2r}{d\phi^2} - \frac{2}{r} \left(\frac{dr}{d\phi}\right)^2  \  - \frac{1}{\mu}\frac{\mu^2 r^4}{ \ell^2} \frac{\ell^2}{\mu r^3}+\frac{1}{\mu}\frac{\mu^2 r^4}{ \ell^2}\frac{Gm_1m_2}{r^2} =0\\
+&\frac{d^2r}{d\phi^2} - \frac{2}{r} \left(\frac{dr}{d\phi}\right)^2  \  - r+\frac{Gm_1m_2 \mu}{\ell^2} r^2=0\\
+\end{align}
+
+
+
+\item[{\bf d)}] Show that complete set of solutions for the orbit equation  is
+\begin{equation}
+r(\phi)= \frac{r_0}{1-\varepsilon \cos(\phi-\phi_0)},
+\end{equation}
+where $\varepsilon$ is called the {\bf eccentricity} and $\phi_0$ the {\bf phase}. Find $r_0$.
+{\it Hint:} The substitution $s=1/r$ is very useful. [2 points] \par 
+\begin{equation}
+\frac{ds}{d\phi}=\frac{ds}{dr}\frac{dr}{d\phi}=\frac{d}{dr}\left(\frac{1}{r}\right)\frac{dr}{d\phi}=-\frac{1}{r^2}\frac{dr}{d\phi}
+\end{equation}
+Taking
+
+
+
+\item[{\bf e)}] Find an expression for the total energy in terms of the eccentricity $\varepsilon$. [2 points]
+\item[{\bf f)}] If an astronaut jumped off the ISS directly towards Earth, what would happen to her orbit? Assume, for simplicity, that the ISS is in a circular orbit. [2 points]
+\end{itemize}
+\end{exercise}
+
+
+linspace meshgrid - use solution of hamiltons equation put into stream plot. google what streamplot has as inpt9999
+
+\begin{comment}
 \begin{itemize}
 \item[{\bf a)}] Find Hamilton's equations for this system. [1 point]
 \item $K=\frac{1}{2}m_1v_1^2+\frac{1}{2}m_2v_2^2$
@@ -160,26 +241,7 @@ where $G$ is Newton's gravitational constant.
 \dot{q_i}=\frac{\partial H}{\partial p_i}
 \dot{p_i}=-\frac{\partial H}{\partial q_i}
 \end{align*}
-
- \item[{\bf b)}] Make a two-dimensional plot of the phase space for the distance $r$ between the objects, and its generalized momentum $p_r$, for concreteness fixing the masses to be those of the International Space Station (ISS) orbiting the Earth, varying $\ell$.
-
-Give a qualitative description of the different types of motion that can be read out of the diagram and comment on how the situation changes with increasing $\ell$. {\it Hint:} For those using {\tt python} the plotting framework {\tt pyplot} has a useful plotting command for phase space plots called {\tt streamplot}.  [4 points]
-\item[{\bf c)}] Use the Lagrange equations to show that the differential equation for the orbit equation $r(\phi)$, where $\phi$ is the polar angle of the motion, is
-\begin{equation}
-\frac{d^2r}{d\phi^2}-\frac{2}{ r}\left(\frac{dr}{d\phi}\right)^2-r+\frac{Gm_1m_2\mu }{\ell^2}r^2=0.
-\end{equation}
-[2 points]
-\item[{\bf d)}] Show that complete set of solutions for the orbit equation  is
-\begin{equation}
-r(\phi)= \frac{r_0}{1-\varepsilon \cos(\phi-\phi_0)},
-\end{equation}
-where $\varepsilon$ is called the {\bf eccentricity} and $\phi_0$ the {\bf phase}. Find $r_0$.
-{\it Hint:} The substitution $s=1/r$ is very useful. [2 points]
-\item[{\bf e)}] Find an expression for the total energy in terms of the eccentricity $\varepsilon$. [2 points]
-\item[{\bf f)}] If an astronaut jumped off the ISS directly towards Earth, what would happen to her orbit? Assume, for simplicity, that the ISS is in a circular orbit. [2 points]
-\end{itemize}
-\end{exercise}
+\end{comment}
 
 
-linspace meshgrid - use solution of hamiltons equation put into stream plot. google what streamplot has as inpt9999
 \end{document}
