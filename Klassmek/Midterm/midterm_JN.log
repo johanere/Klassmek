@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  28 MAR 2019 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  28 MAR 2019 21:06
 entering extended mode
 **./midterm_JN.tex
 (midterm_JN.tex
@@ -355,39 +355,45 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [2] [3
 
 ] [4]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 166.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 167.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (38.93135pt too wide) detected at line 179
+Overfull \hbox (38.93135pt too wide) detected at line 180
 []
  []
 
-[5] [6] Excluding 'comment' comment.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+[5] [6] [7]
+Overfull \hbox (87.6432pt too wide) detected at line 250
+[]
+ []
+
+
+Overfull \hbox (27.40462pt too wide) detected at line 257
+[]
+ []
+
+Excluding 'comment' comment.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (midterm_JN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 247.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 247.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
 Package rerunfilecheck Info: File `midterm_JN.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
  ) 
 Here is how much of TeX's memory you used:
- 6507 strings out of 492973
- 93255 string characters out of 3135933
- 203679 words of memory out of 3000000
- 10249 multiletter control sequences out of 15000+200000
+ 6519 strings out of 492973
+ 93421 string characters out of 3135933
+ 203783 words of memory out of 3000000
+ 10250 multiletter control sequences out of 15000+200000
  16227 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,25p,474b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,25p,564b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ecti1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
@@ -399,14 +405,16 @@ AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
 ers\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
 pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb>
-Output written on midterm_JN.pdf (7 pages, 155903 bytes).
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b>
+Output written on midterm_JN.pdf (8 pages, 186441 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

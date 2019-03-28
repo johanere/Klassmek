@@ -159,6 +159,7 @@ where $G$ is Newton's gravitational constant.
 \item A gravitational potential is a central potential, as such, $H$ from question 1 may used \eqref{eq:H1}, and the correct $V(r)$ applied:
 \begin{align}
 H &=  \frac{1}{2} \frac{p_r^2}{\mu}  +\frac{1}{2}\frac{p_\phi^2}{\mu r^2}  -\frac{Gm_1m_2}{r}
+\label{eq:2.a.H}
 \end{align}
 Where $\mu=$ and $p_r$ and $p_\phi$
  \item[{\bf b)}] Make a two-dimensional plot of the phase space for the distance $r$ between the objects, and its generalized momentum $p_r$, for concreteness fixing the masses to be those of the International Space Station (ISS) orbiting the Earth, varying $\ell$.
@@ -202,16 +203,64 @@ ta me dphidt er lik l lblabl
 r(\phi)= \frac{r_0}{1-\varepsilon \cos(\phi-\phi_0)},
 \end{equation}
 where $\varepsilon$ is called the {\bf eccentricity} and $\phi_0$ the {\bf phase}. Find $r_0$.
-{\it Hint:} The substitution $s=1/r$ is very useful. [2 points] \par 
+{\it Hint:} The substitution $s=1/r$ is very useful. [2 points] \par
+
+%%%%%%%%%%%%%%%%%%% 2.d 
 \begin{equation}
-\frac{ds}{d\phi}=\frac{ds}{dr}\frac{dr}{d\phi}=\frac{d}{dr}\left(\frac{1}{r}\right)\frac{dr}{d\phi}=-\frac{1}{r^2}\frac{dr}{d\phi}
+\frac{ds}{d\phi}=\frac{ds}{dr}\frac{dr}{d\phi}=\frac{d}{dr}\left(\frac{1}{r}\right)\frac{dr}{d\phi}=-\frac{1}{r^2}\frac{dr}{d\phi} \implies \frac{dr}{d\phi}=-\frac{1}{s^2}\frac{ds}{d\phi}
 \end{equation}
-Taking
+Substituting into \eqref{eq:2c.diffeq}: \textbf{fjern første}
+\begin{align}
+&\frac{d^2r}{d\phi^2}-\frac{2}{ r}\left(\frac{dr}{d\phi}\right)^2-r+\frac{Gm_1m_2\mu }{\ell^2}r^2=0\\
+	&\frac{d}{d\phi}\left(-\frac{1}{s^2}\frac{ds}{d\phi}\right) -2s\left(-\frac{1}{s^2}\frac{ds}{d\phi} \right)^2-\frac{1}{s}+\frac{Gm_1m_2\mu }{\ell^2 s^2}=0 \\
+	&-\frac{d}{d\phi}\left(\frac{1}{s^2}\right)\frac{ds}{d\phi}-\frac{d}{d\phi}\left(\frac{ds}{d\phi}\right)\frac{1}{s^2} -\frac{2}{s^3}\left(\frac{ds}{d\phi} \right)^2-\frac{1}{s}+\frac{Gm_1m_2\mu }{\ell^2 s^2}=0 \\
+	&\frac{2}{s^3} \frac{ds}{d\phi}\frac{ds}{d\phi}-\frac{1}{s^2}\frac{d^2s}{d\phi} -\frac{2}{s^3}\left(\frac{ds}{d\phi} \right)^2-\frac{1}{s}+\frac{Gm_1m_2\mu }{\ell^2 s^2}=0 \\
+		&-\frac{1}{s^2}\frac{d^2s}{d\phi} -\frac{1}{s}+\frac{Gm_1m_2\mu }{\ell^2 s^2}=0 \\		
+	&\implies 	\frac{1}{s^2}\frac{d^2s}{d\phi} +\frac{1}{s}=\frac{Gm_1m_2\mu }{\ell^2 s^2}\\
+	&\implies \frac{d^2s}{d\phi} + s=\frac{Gm_1m_2\mu }{\ell^2 }
+\end{align}
+
+which is a nonhomogeneous second order differential equation. 
+The general solution to the homogeneous equation (harmonic oscillator equation): 
+\begin{equation}
+\frac{d^2s}{d\phi} + s=0
+\end{equation}  is $s_1= A \cos(\phi-\phi_0)$, where $A$ is a constant, and $\phi_0$ the phase. \par 
+A solution to the nonhomegenous equation is the constant solution: $s_0=\frac{Gm_1m_2\mu }{\ell^2 }$. Thus the solution  of the differential equation may be written as: 
+\begin{equation}
+s(\phi)=
+\frac{Gm_1m_2\mu }{\ell^2 }+A \cos(\phi-\phi_0)=\frac{Gm_1m_2\mu }{\ell^2 }\left(1+\varepsilon \cos(\phi-\phi_0)\right)
+\end{equation} \par 
+The choice of $A$ and $\phi_0$ correspond to particular instances of the problem, such that $A$ may be written as $-A$, thus: 
+\begin{equation}
+s(\phi)=\frac{Gm_1m_2\mu }{\ell^2 }\left(1-\varepsilon \cos(\phi-\phi_0)\right)
+\end{equation} 
+Where $\epsilon=\frac{A l^2}{Gm_1m_2\mu}$ \par 
+Solving for $r(\phi)$ by substituting in $r=\frac{1}{s}$ and rearranging:
+\begin{align*}
+r(\phi)=\frac{\frac{\ell^2 }{Gm_1m_2\mu}}{1-\varepsilon \cos(\phi-\phi_0)}=\frac{r_0}{1-\varepsilon \cos(\phi-\phi_0)}
+\end{align*} 
+As shown above, $r_0=\frac{\ell^2 }{Gm_1m_2\mu}$, where $\ell$ is a constant of motion corresponding to a specific orbit.
+
+\item[{\bf e)}] Find an expression for the total energy in terms of the eccentricity $\varepsilon$. [2 points] \par 
+
+\begin{align*}
+\dot{r}(\phi)&=\frac{d}{dt}\frac{r_0}{(1-\varepsilon \cos(\phi-\phi_0)}=-\frac{r_0(\varepsilon sin(\phi-\phi_0)}{(1-\varepsilon \cos(\phi-\phi_0)^2}\frac{d\phi}{dt}=-\frac{r_0(\varepsilon sin(\phi-\phi_0)}{(1-\varepsilon \cos(\phi-\phi_0)^2}\frac{\ell}{\mu (r(\phi))^2}\\
+&=-\frac{r_0(\varepsilon sin(\phi-\phi_0)}{(1-\varepsilon \cos(\phi-\phi_0)^2}\frac{\ell}{\mu r_0^2}(1-\varepsilon \cos(\phi-\phi_0)^2\\
+&=-\frac{\varepsilon \ell}{\mu r_0}\sin(\phi-\phi_0)
+\end{align*}
+
+As $\frac{dH}{dt}=\frac{dE_{tot}}{dt}=0$, finding the total energy, $E_{tot}$, may be done at an arbitrary angle $\phi$. Using  \eqref{eq:2.a.H} and substituting  $p_r=\mu \dot{r}(\phi)$ and $p_\phi=\ell$, yields $H=\frac{1}{2}\mu(\dot{r}(\phi))^2+\frac{1}{2}\frac{\ell^2}{\mu (r(\phi))^2}-\frac{Gm_1m_2}{r}=E_{tot}$, may therefore be calculated at $\phi=\phi_0$, where  $r(\phi_0)=\frac{\ell^2}{\eta \mu(1-\varepsilon)}$ , where $\nu=Gm_1m_2$, and $\dot{r}(\phi_0)=-\frac{\varepsilon \ell}{\mu r_0}\sin(\phi_0-\phi_0)=0$. So;
+\begin{align*}
+	H&=\frac{1}{2}\frac{\ell^2}{\mu (r(\phi_0))^2}-\frac{Gm_1m_2}{r(\phi)} \\
+	&=\frac{1}{2}\frac{\eta^2\mu(1-\varepsilon)^2}{\ell^2}-\frac{\eta^2 \mu(1-\varepsilon)}{\ell^2}=\frac{\eta^2 \mu}{\ell^2}\left(\frac{(1-\varepsilon)^2}{2}-1+\varepsilon\right)=\frac{\eta^2 \mu}{\ell^2}(\frac{\varepsilon^2}{2}-\frac{1}{2})\\
+	&=\frac{G^2m_1^2m_2^2 \mu}{2\ell}(\varepsilon^2-1)
+\end{align*}
+Which means that $E_{tot}(\varepsilon)=\frac{Gm_1m_2}{2r_0}(\epsilon^2-1)$
 
 
 
-\item[{\bf e)}] Find an expression for the total energy in terms of the eccentricity $\varepsilon$. [2 points]
-\item[{\bf f)}] If an astronaut jumped off the ISS directly towards Earth, what would happen to her orbit? Assume, for simplicity, that the ISS is in a circular orbit. [2 points]
+\item[{\bf f)}] If an astronaut jumped off the ISS directly towards Earth, what would happen to her orbit? Assume, for simplicity, that the ISS is in a circular orbit. [2 points] \par
+$E_0(\epsilon=0)+\frac{1}{2}\mu \dot{r}^2=E(\epsilon_{new})$ eller $H(p_r,p_\phi)=E(\epsilon)=???=\ell=\mu_A r_0V_{ISS}. \vec{\ell}=\mu\vec{r} \times \dot{\vec{r}}$
 \end{itemize}
 \end{exercise}
 
