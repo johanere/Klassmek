@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  24 APR 2019 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  3 MAY 2019 10:47
 entering extended mode
 **./problem_set_11.tex
 (problem_set_11.tex
@@ -81,7 +81,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 \c@excount=\count89
 
-No file problem_set_11.aux.
+(problem_set_11.aux)
 \openout1 = `problem_set_11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -96,6 +96,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
+
 (C:\Users\johan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count90
@@ -177,83 +178,64 @@ LaTeX Warning: No \author given.
 [1
 
 {C:/Users/johan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Reference `fig:currentloop' on page 1 undefined on input line 31
-.
-
 Package epstopdf Info: Source file: <currentloop.eps>
 (epstopdf)                    date: 2018-01-17 18:49:43
 (epstopdf)                    size: 611478 bytes
 (epstopdf)             Output file: <currentloop-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-04-24 10:29:38
+(epstopdf)                    size: 14560 bytes
 (epstopdf)             Command: <epstopdf --outfile=currentloop-eps-converted-t
 o.pdf currentloop.eps>
-(epstopdf)             \includegraphics on input line 39.
-runsystem(epstopdf --outfile=currentloop-eps-converted-to.pdf currentloop.eps).
-..executed (allowed).
-
-Package epstopdf Info: Result file: <currentloop-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-04-24 10:29:38
-(epstopdf)                    size: 14560 bytes.
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
 <currentloop-eps-converted-to.pdf, id=7, 424.58624pt x 221.82875pt>
 File: currentloop-eps-converted-to.pdf Graphic file (type pdf)
 <use currentloop-eps-converted-to.pdf>
-Package pdftex.def Info: currentloop-eps-converted-to.pdf  used on input line 3
-9.
+Package pdftex.def Info: currentloop-eps-converted-to.pdf  used on input line 4
+0.
 (pdftex.def)             Requested size: 227.62204pt x 118.92259pt.
-
-LaTeX Warning: Reference `fig:dipole' on page 1 undefined on input line 64.
-
 Package epstopdf Info: Source file: <dipole.eps>
 (epstopdf)                    date: 2018-01-17 18:49:43
 (epstopdf)                    size: 608910 bytes
 (epstopdf)             Output file: <dipole-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-04-24 10:29:41
+(epstopdf)                    size: 13576 bytes
 (epstopdf)             Command: <epstopdf --outfile=dipole-eps-converted-to.pdf
  dipole.eps>
-(epstopdf)             \includegraphics on input line 69.
-runsystem(epstopdf --outfile=dipole-eps-converted-to.pdf dipole.eps)...executed
- (allowed).
-
-Package epstopdf Info: Result file: <dipole-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-04-24 10:29:41
-(epstopdf)                    size: 13576 bytes.
+(epstopdf)             \includegraphics on input line 70.
+Package epstopdf Info: Output file is already uptodate.
 <dipole-eps-converted-to.pdf, id=8, 296.10625pt x 258.9675pt>
 File: dipole-eps-converted-to.pdf Graphic file (type pdf)
 <use dipole-eps-converted-to.pdf>
-Package pdftex.def Info: dipole-eps-converted-to.pdf  used on input line 69.
+Package pdftex.def Info: dipole-eps-converted-to.pdf  used on input line 70.
 (pdftex.def)             Requested size: 170.71652pt x 149.3082pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1 <./currentloop-eps-converted-to.pdf>] [2 <./dipole-eps-converted-to.pdf>]
-(problem_set_11.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(problem_set_11.aux) ) 
 Here is how much of TeX's memory you used:
- 2054 strings out of 492973
- 27204 string characters out of 3135933
- 88671 words of memory out of 3000000
+ 2056 strings out of 492973
+ 27309 string characters out of 3135933
+ 88687 words of memory out of 3000000
  5898 multiletter control sequences out of 15000+200000
  12917 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,27p,556b,276s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecbx1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on problem_set_11.pdf (3 pages, 137201 bytes).
+ 41i,6n,27p,556b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\johan\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\johan\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on problem_set_11.pdf (3 pages, 137539 bytes).
 PDF statistics:
  184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
