@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  28 MAR 2019 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.7)  29 MAR 2019 15:55
 entering extended mode
 **./midterm_JN.tex
 (midterm_JN.tex
@@ -269,38 +269,63 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \CommentStream=\write3
 
 Excluding comment 'comment')
-\c@excount=\count113
- (midterm_JN.aux)
+(C:\Users\johan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count113
+\lst@gtempboxa=\box28
+\lst@token=\toks22
+\lst@length=\count114
+\lst@currlwidth=\dimen119
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen122
+
+(C:\Users\johan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box29
+)
+(C:\Users\johan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+\c@excount=\count121
+
+(midterm_JN.aux)
 \openout1 = `midterm_JN.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (C:\Users\johan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen119
-\scratchbox=\box28
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen120
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count122
+\scratchdimen=\dimen123
+\scratchbox=\box30
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen124
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks24
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -314,8 +339,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 26.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 27.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -323,84 +348,97 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (midterm_JN.out) (midterm_JN.out)
 \@outlinefile=\write4
 \openout4 = `midterm_JN.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+\c@lstlisting=\count129
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/johan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
- [2] [3
-
-] [4]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 167.
+{C:/Users/johan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 179.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [5]
+<phases.png, id=78, 540.51938pt x 394.47375pt>
+File: phases.png Graphic file (type png)
+<use phases.png>
+Package pdftex.def Info: phases.png  used on input line 194.
+(pdftex.def)             Requested size: 378.36098pt x 276.12973pt.
+
+Overfull \hbox (18.36098pt too wide) in paragraph at lines 194--195
+ [][] 
+ []
+
+[6]
+Overfull \vbox (37.95612pt too high) has occurred while \output is active []
+
+
+[7 <./phases.png>] [8]
+Overfull \hbox (87.6432pt too wide) detected at line 278
+[]
+ []
+
+
+Overfull \hbox (27.40462pt too wide) detected at line 285
+[]
+ []
+
+[9] [10]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 330.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (38.93135pt too wide) detected at line 180
-[]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 330.
+ [11]
+Overfull \hbox (64.63142pt too wide) in paragraph at lines 362--364
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] [6] [7]
-Overfull \hbox (87.6432pt too wide) detected at line 250
-[]
- []
-
-
-Overfull \hbox (27.40462pt too wide) detected at line 257
-[]
- []
-
-Excluding 'comment' comment.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
+[12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
  (midterm_JN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 382.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
 Package rerunfilecheck Info: File `midterm_JN.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 6519 strings out of 492973
- 93421 string characters out of 3135933
- 203783 words of memory out of 3000000
- 10250 multiletter control sequences out of 15000+200000
- 16227 words of font info for 47 fonts, out of 3000000 for 9000
+ 8153 strings out of 492973
+ 114929 string characters out of 3135933
+ 224429 words of memory out of 3000000
+ 11830 multiletter control sequences out of 15000+200000
+ 17769 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,25p,564b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,32p,809b,1760s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ectt1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecti1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\johan\AppData\Local\MiKTeX
+ecbx1200.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecbx1440.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ectt1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk> <C:\Users\johan\AppData\Local\MiKTeX
 \2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\johan\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\johan\
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\johan\
 AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
 ers\johan\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
 pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
@@ -412,9 +450,9 @@ nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b>
-Output written on midterm_JN.pdf (8 pages, 186441 bytes).
+Output written on midterm_JN.pdf (12 pages, 338644 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
