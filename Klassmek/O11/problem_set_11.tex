@@ -54,18 +54,23 @@ Figure~\ref{fig:currentloop} shows a rectangular current loop ABCD. In the loop'
 
 \item $\Delta $ is the cross section area of the current wire. Using this, the integral in \eqref{eq:1.m} instead evaluated as a piecewize line integral:
 \begin{align*}
-\vec m = \Delta \frac{1}{2} [ \int_A^B(\vec x \times \vec j(\vec x))\,dx+\int_C^D((\vec x + \vec b )\times \vec j(\vec x))\,dx \\
-+\int_A^D(\vec x \times \vec j(\vec y))\,dy+\int_B^C((\vec x+\vec a )\times \vec j(\vec y))\,dy  ] \\
-\vec m =  \Delta \frac{1}{2}\left[ \int_A^B 0 + \,dx \int_C^D  bj(\vec x) \vec k \,dx + \int_A^D 0 \, dy+\int_B^C aj(\vec y)\vec k \,dy \right] 
+\vec m = \Delta \frac{1}{2} [ \int_A^B(\vec x \times \vec j(\vec r))\,dx+\int_D^C((\vec x + \vec b )\times \vec j(\vec r))\,dx \\
++\int_A^D(\vec x \times \vec j(\vec r))\,dy+\int_B^C((\vec r+\vec a )\times \vec j(\vec r))\,dy  ]
 \end{align*}
-\end{itemize}
-$I$ uniform on each segment of the loop $\rightarrow \vec j(\vec r) = \vec j$, thus: 
+$I$ uniform on each segment of the loop $\rightarrow$ $\vec j = - j \hat{x}$ on DC and $\vec j = j \hat{y}$ BC,  thus: 
+\begin{align*}
+\vec m =  \Delta \frac{1}{2}\left[ \int_A^B 0 + \,dx \int_D^C  -(-bj) \vec k \,dx + \int_A^D 0 \, dy+\int_B^C aj\vec k \,dy \right] 
+\end{align*} 
+
+
 \begin{align*}
 &\vec m =  \Delta \frac{1}{2}\left[\int_C^D  bj \vec k \,dx +\int_B^C aj\vec k \,dy \right]  \\
 &\vec m =  \Delta \frac{1}{2}\left[ jab \vec k + jab \vec k \right]=\Delta j ab \vec k =  I \vec a \times \vec b
 \end{align*}
-Charge density $\rho (\vec r)=0 \implies \vec{p}=0$
 
+\item Charge density $\rho (\vec r)=0 \implies \vec{p}=0$ 
+
+\end{itemize}
 
 In the following we will examine how the loop is observed in a reference frame $S'$, where the loop is moving with velocity $\vec v$ to the right ($\beta=v/c$ and $\gamma=1/\sqrt{1-\beta^2}$). The Lorentz transformation formulas for charge and current denisities may be useful when solving the problems below.
 
@@ -74,41 +79,60 @@ In the following we will examine how the loop is observed in a reference frame $
 \item Length contraction in x direction $\rightarrow a'=\frac{1}{\gamma}a$. No velocity in y direction $\rightarrow b'=b$
 
 \item[{\bf c)}]Show that the parts AB and CD of the loop have charge $\pm aIv/c^2$ in $S'$.
-\item $Q=\int \rho(\vec r) d^3r$. Using $\Delta'=\Delta$ on loop from $A$ to $B$, and the fact that $\vec j(\vec r) = \vec j \implies \rho'(x')=\rho$  
+\item $Q=\int \rho(\vec r) d^3r$. Using $\Delta'=\Delta$ and that uniform $I \implies $ uniform $\rho'$ on AB and DC
 \begin{align*}
-Q_{AB}'= \int_A^B \Delta p'(x)  dx =\Delta \rho' a'
+Q_{AB}'= \int_A^B \Delta p'  dx =\Delta  a' \rho'
 \end{align*}
-Using Lorentz transformation in the x-direction, and that $I$ is uniform:
+Using Lorentz transformation in the x-direction, with velocity $-v$:
 \begin{equation}
-\rho'=\gamma(\rho-\frac{v}{c^2} j)=-\gamma\frac{v}{c^2} j
+\rho'=\gamma(\rho+\frac{v}{c^2} j)=\gamma\frac{v}{c^2} j
 \end{equation} 
-Thus $Q_{AB}'=\Delta  a' -\gamma\frac{v}{c^2} j = -\Delta  a \frac{v}{c^2} j=-  aI v/c^2 $.
-Similarly, $Q_{DC}'= aI v/c^2 $ as the current travels in the opposite direction on the upper part of the loop. Thus $Q=\pm aI v/c^2$ on the parts AB and CD of the loop in S'.
+Thus $Q_{AB}'=\Delta  a' \gamma\frac{v}{c^2} j = \Delta  a \frac{v}{c^2} j=  aI v/c^2 $.
+Similarly, $Q_{DC}'= -aI v/c^2 $ as the current travels in the opposite direction on the upper part of the loop. Thus $Q=\pm aI v/c^2$ on the parts AB and CD of the loop in S'.
 
 \item[{\bf d)}]Show that in $S'$ the loop's electric dipole moment is ${\vec p}'=-\frac{1}{c^2}\vec{m}\times\vec{v}$, and the magnetic dipole moment is $\vec{m}'=(1-\beta^2/2)\vec{m}$.
+
+
+Lorentz transformation in y-direction yields that $\rho'=0$ on the vertical sides of the loop. Thus;
 
 \begin{align*}
 &p'=\int\vec r'\rho(\vec r')\,d^3r' \\
 &=
+\Delta \int_A^B\vec x'\rho'(\vec r')\,dx'
++\Delta \int_D^C(\vec x'+\vec b')\rho'(\vec r')\,dx'
++\Delta' \int_A^D\vec y'\rho'(\vec r')\,dy'
++\Delta' \int_B^C(\vec y'+\vec a') \rho'(\vec r')\,dy' \\
+&=
 \Delta \int_A^B\vec x'\rho(\vec r')\,dx'
-+\Delta \int_D^C(\vec x'+\vec b')\rho(\vec r')\,dx'
-+\Delta' \int_A^D\vec y'\rho(\vec r')\,dy'
-+\Delta' \int_B^C(\vec y'+\vec a') \rho(\vec r')\,dy' \\
-&=\Delta \left[ \int_A^B\vec x'\rho(\vec r')\,dx'
-+ \int_D^C(\vec x'+\vec b')\rho(\vec r')\,dx'
-+\frac{1}{\gamma} \int_A^D\vec y'\rho(\vec r')\,dy'
-+\frac{1}{\gamma} \int_B^C(\vec y'+\vec a') \rho(\vec r')\,dy' \right] \\
-&=-\gamma\frac{v}{c^2} j\Delta \left[ \int_A^B\vec x'\,dx'
-+ \int_D^C(\vec x'+\vec b')\,dx'
-+\frac{1}{\gamma} \int_A^D\vec y'\,dy'
-+\frac{1}{\gamma} \int_B^C(\vec y'+\vec a')\,dy' \right] \\
-&=-\gamma\frac{v}{c^2} I \left[ \vec a'
-+ \int_D^C(\vec x'+\vec b')\,dx'
-+\frac{1}{\gamma} \vec b'
-+\frac{1}{\gamma} \int_B^C(\vec y'+\vec a')\,dy' \right] \\
++\Delta \int_D^C(\vec x'+\vec b') \rho(\vec r')\,dx'
++\Delta' \int_A^D\vec y'0 \,dy'
++\Delta' \int_B^C(\vec y'+\vec a') 0 \,dy' \\
+&= \gamma\frac{v}{c^2}  [
+\Delta \int_A^B\vec x' j \,dx'
++\Delta \int_D^C (\vec x'+b') (-j)\,dx' ] \\
+&= \gamma\frac{v}{c^2} \Delta   (-\vec ba'j )=-\frac{1}{c^2}   (vaj \Delta \vec b )=-\frac{1}{c^2}   (v Ia \vec b )=-\frac{1}{c^2}   (\vec v \cdot I \vec a) \vec b  \\
+\end{align*}
+Using that the triple product rule: $(\vec a \times \vec b)\times \vec c=-(\vec c \cdot \vec b)\vec a + (\vec c \cdot \vec a) \vec b$, and the fact that $\vec v \cdot \vec b=0$ yields
+$\vec m=\frac{1}{c^2} \vec m \times \vec v$
+
+As the velocity of S seen from S' is constant, the magnetic dipole moment may be evaluated as the origins of the two RFs coincide. Here, the contribution from line segments AB and AD are zero, just as in S. Using that $j_x'=\gamma j_x$ on DC:
+\begin{align*}
+&\vec m'=\frac{1}{2}\int(\vec r' \times \vec j'(\vec r'))\,d^3r' \\
+&\vec m' = \frac{1}{2} \left[\Delta \int_D^C((\vec x' + \vec b' )\times \vec j'(\vec r)\,dx + \Delta'\int_B^C((\vec x'+\vec a' )\times \vec j(\vec r))\,dy  \right] \\
+&\vec m' = \frac{1}{2} \left[\Delta \int_D^C -b'(-j') \vec k dx + \Delta'\int_B^C a'j' \vec k \,dy  \right] \\
+&\vec m' = \frac{1}{2} \left[\Delta  a'b'j_x' \vec k  +  \Delta ' a'b'j_y' \vec k  \right]  = \frac{1}{2} \left[\Delta  \frac{a}{\gamma} b j_x\gamma  +  \frac{\Delta}{\gamma}\frac{a}{\gamma} b j_y   \right] \vec k \\
+&\vec m'= =\frac{1}{2}\left[ \Delta abj+ \frac{1}{\gamma^2} \Delta abj \right] \vec k = \frac{1}{2}\left[ 1+ \frac{1}{\gamma^2}  \right] \vec m \\
+&\vec m' = \frac{1}{2}\left[ 1+  (1+ \beta^2  ) \right] \vec m \\
+&\vec m'=(1-\beta^2/2)\vec m
 \end{align*}
 \item[{\bf e)}]Show that the current  is $I\gamma$ in the AB and CD and $I/\gamma$ in BC and DA.
+\item On all line segments, $I'=\Delta' j'$. Using that $j'=\gamma j$, $\Delta'=\Delta$ on AB and CD, and that $j'=j$, $\Delta'=\frac{\Delta}{\gamma}$ on BC and DA:
+\begin{align*}
+I_{AB}'=I_{CD}'=\Delta j'= \gamma \Delta j = \gamma I \\
+I_{BC}'=I_{DA}'=\Delta' j = \frac{\Delta}{\gamma} j =  I/\gamma \\
+\end{align*}
 \item[{\bf f)}]Show that the result in {\bf e)} is consistent with charge conservation.
+$\frac{\partial \rho}{\partial t}+\vec \nabla \vec j=0$
 \end{itemize}
 \end{exercise}
 
@@ -130,10 +154,12 @@ An electric point charge $q$ is moving with constant velocity $\vec v$ along the
 \begin{itemize}
 \item[{\bf a)}] Give the expression for the scalar potential $\phi'$ and the vector potential $\vec A'$ set up by the charge in its rest frame $S'$. In the relativistic description the scalar and vector potentials define the four-potential $A'^\mu$, with the time component related to the scalar potential as $A'^0=\phi'/c$.  Make use of the transformation properties of the four-potential to determine its components $A^\mu$ in reference frame $S$ as functions of the coordinates $(ct, x, y, z)$ in the same frame.
 
-\item $\phi' (\vec r)=\frac{q}{4\pi \epsilon_0 r} $
+\item $\phi' (\vec r)=\frac{q}{4\pi \epsilon_0 |\vec r'-\vec r_q'|} =\frac{q}{4\pi \epsilon_0 r'} $, where $\vec r_q'=0$ is the position of the charge.
 \item $\vec A' =0$, as there are no currents in the rest frame S'.
-\item $A'^{\mu}=(A'^0,\vec A)=(\phi' / c, \vec 0)=(\frac{q/c}{4\pi \epsilon_0 r },\vec 0)$
-\item RF S moves with velocity $-v$ with respect to RF S', thus $\phi=\gamma(\phi'+vA_x')=\gamma \phi$.
+\item $A'^{\mu}=(A'^0,\vec A)=(\phi' / c, \vec 0)=(\frac{q/c}{4\pi \epsilon_0 r' },\vec 0)$
+\item Four potential in RF S: $A^{\rho}=L^{\rho}_{\mu}A^{\mu}=(\gamma A'^0 , -\gamma \beta A'^0,0,0)=  (\gamma \phi' / c, \gamma \frac{v}{c} \phi'/c,0,0)$. 
+\item $A^0=\gamma \phi/c=\gamma/c \frac{q}{4\pi \epsilon_0 |\vec r'-\vec r_q'|} $
+
 \item[{\bf b)}] Determine (the components of) the electric field  $\vec E$  in the reference frame $S$, as functions of $(ct, x, y, z)$.
 \item[{\bf c)}] Determine similarly the magnetic field  $\vec B$  in reference frame $S$.
 \end{itemize}
